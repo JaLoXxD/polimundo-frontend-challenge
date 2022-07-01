@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
 
     <p>
-      <a href="https://vitejs.dev/guide/features.html" target="_blank"
+      <a class="text-warning" href="https://vitejs.dev/guide/features.html" target="_blank"
         >Vite Documentation</a
       >
       |
