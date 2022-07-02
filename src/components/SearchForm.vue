@@ -8,7 +8,7 @@
         <input id="departureDate" class="form-control mb-4" type="text">
         <label for="arrivalDate" class="text-start">Arrival Date</label>
         <input id="arrivalDate" class="form-control mb-4" type="text">
-        <button class="btn btn-dark m-auto border-0 py-3 px-5">Find my plane</button>
+        <button class="btn btn-dark m-auto border-0 py-3 px-5">Find my ticket</button>
     </div>
 </template>
 
