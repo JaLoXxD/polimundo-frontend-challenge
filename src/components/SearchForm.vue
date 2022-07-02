@@ -1,14 +1,14 @@
 <template>
     <div class="d-flex flex-column m-auto">
         <label for="origin" class="text-start">Origin City</label>
-        <input id="origin" class="form-control mb-4" type="text">
+        <input id="origin" class="form-control mb-4" type="text" placeholder="Type the city name">
         <label for="destination" class="text-start">Destination City</label>
-        <input id="destination" class="form-control mb-4" type="text">
+        <input id="destination" class="form-control mb-4" type="text" placeholder="Type the city name">
         <label for="departureDate" class="text-start">Departure Date</label>
-        <input id="departureDate" class="form-control mb-4" type="text">
+        <input id="departureDate" class="form-control mb-4" type="date">
         <label for="arrivalDate" class="text-start">Arrival Date</label>
-        <input id="arrivalDate" class="form-control mb-4" type="text">
-        <button class="btn btn-dark m-auto border-0 py-3 px-5">Find my ticket</button>
+        <input id="arrivalDate" class="form-control mb-4" type="date">
+        <router-link to="/results" class="btn btn-dark m-auto border-0 py-3 px-5">Find my ticket</router-link>
     </div>
 </template>
 
