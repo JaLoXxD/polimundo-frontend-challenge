@@ -1,7 +1,8 @@
 <template>
 	<div id="app">
 		<Navbar />
-		<router-view class="mt-5 container"></router-view>
+    <img src="./assets/images/plane.png" alt="">
+		<router-view class="mt-2 container row"></router-view>
 	</div>
 </template>
 

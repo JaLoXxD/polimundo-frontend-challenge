@@ -1,7 +1,7 @@
 <template>
-	<div id="resultsCont">
+	<div id="resultsCont" class="m-auto">
 		<h1>Results</h1>
-		<div class="cards d-flex flex-wrap gap-5 justify-content-center mt-5">
+		<div class="cards d-flex flex-wrap gap-5 justify-content-center my-5">
 			<div v-for="ticket in getTickets" :key="ticket.id">
 				<TicketCard :ticket="ticket" />
 			</div>
