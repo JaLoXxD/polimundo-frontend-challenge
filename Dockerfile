@@ -1,23 +1,23 @@
-FROM node:lts-alpine
-RUN apk update && apk add git
+FROM node:16.14.2-alpine
 
-# instalar un simple servidor http para servir nuestro contenido estático
-RUN npm install
+# install simple http server for serving static content
 
-# hacer la carpeta 'app' el directorio de trabajo actual
+# make the 'app' folder the current working directory
 WORKDIR /app
 
-# copiar 'package.json' y 'package-lock.json' (si están disponibles)
+# copy both 'package.json' and 'package-lock.json' (if available)
 COPY package*.json ./
-
-# instalar dependencias del proyecto
-RUN npm install
-
-# copiar los archivos y carpetas del proyecto al directorio de trabajo actual (es decir, la carpeta 'app')
 COPY . .
 
-# construir aplicación para producción minificada
+# install project dependencies
+RUN npm install -g http-server
+RUN npm install
+
+# copy project files and folders to the current working directory (i.e. 'app' folder)
+
+# build app for production with minification
 RUN npm run build
+#RUN npm run dev
 
 EXPOSE 8080
-CMD [ "npm","run", "serve" ]
+CMD [ "http-server", "dist" ]
