@@ -5,8 +5,17 @@ This project uses vite and vue v2 with vuex and vue-router
 ## Steps to run it in docker
 
 - First, clone the repository.
+
+```
+git clone https://github.com/JaLoXxD/polimundo-frontend-challenge
+```
+
 - After that, run docker.
+
 - Go to the root folder.
+
+  ![image](https://user-images.githubusercontent.com/65001908/177015699-2a77e317-840d-481b-99df-5e135d1210d6.png)
+
 - Exec this command: 
  ```
  docker build -t vuejs-front2/dockerize-vuejs-app2 .
